@@ -16,7 +16,7 @@ export default function createStars() {
     star.style.top = Math.random() * 100 + '%';
 
     // Random animation delay
-    star.style.animationDelay = Math.random() * 2 + 's';
+    star.style.animationDelay = '-' + Math.random() * 2 + 's';
 
     sky.appendChild(star);
   }
