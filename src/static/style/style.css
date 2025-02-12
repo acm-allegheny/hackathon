@@ -18,15 +18,53 @@ body {
     overflow-x: hidden;
 }
 
-/* hero */
-#hero {
+/* constellation */
+
+#sky {
+    width: 100%;
     height: 100vh;
+    background: linear-gradient(to bottom, #0a0a2a, #1a1a4a);
+    position: relative;
+    overflow: hidden;
 }
 
-#hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 1.5s infinite alternate;
+}
+
+.constellation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 150px;
+}
+
+.constellation path {
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 2;
+    fill: none;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+@keyframes glow {
+    0% {
+    stroke: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
+    }
+    100% {
+    stroke: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
+    }
 }
 
 /* Navbar Styles */
