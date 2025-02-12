@@ -1,0 +1,116 @@
+/* General style */
+
+/* Remove scroll bar but allow scrolling */
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space for WebKit-based browsers */
+    background: transparent; /* Transparent background for scrollbar */
+}
+
+/* For other browsers */
+html {
+    scrollbar-width: none; /* Disable scrollbar for other browsers */
+}
+
+body {
+    background: #1B3054;
+    font-family: Monospace;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* hero */
+#hero {
+    height: 100vh;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #1B3054;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar .links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar .links a:hover {
+    color: #FEDA48;
+}
+
+/* Logo Styles */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.logo-container a {
+    display: block;
+}
+
+.logo-container a img {
+    max-height: 80px;
+}
+
+/* Grid Layout for Sections */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Section Styles */
+.section {
+    font-size: 1rem;
+    padding: 60px 20px;
+    background: #ffffff;
+    color: #000000;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section:last-of-type {
+    margin-bottom: 0;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto;
+    color:#000000;
+}
+
+/* Footer Styles */
+footer {
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h2, p {
+    color: #ffffff;
+    text-decoration: none;
+}
