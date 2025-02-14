@@ -135,6 +135,13 @@ footer h2, footer p {
     color: #CDFFD8;
 }
 
+/* Title */
+.timeline-container p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
 /* Scrollable Timeline */
 .timeline-wrapper {
     display: flex;
