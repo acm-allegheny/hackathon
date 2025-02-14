@@ -7,13 +7,12 @@ body {
 }
 
 html {
-    scrollbar-width: none; /* Disable scrollbar for other browsers */
+    scrollbar-width: none;
 }
 
-/* Remove scroll bar but allow scrolling */
 ::-webkit-scrollbar {
-    width: 0; /* Remove scrollbar space for WebKit-based browsers */
-    background: transparent; /* Transparent background for scrollbar */
+    width: 0;
+    background: transparent;
 }
 
 /* Navbar Styles */
@@ -29,7 +28,7 @@ html {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .navbar .links a {
@@ -73,7 +72,7 @@ html {
 /* Grid Layout for Sections */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures even distribution */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -146,52 +145,51 @@ footer h2, footer p {
 .timeline-wrapper {
     display: flex;
     overflow-x: auto;
-    scrollbar-width: none; /* Hide default scrollbar */
+    scrollbar-width: none;
     scroll-behavior: smooth;
     white-space: nowrap;
     margin-top: -50px;
 }
 
-/* Hide default scrollbar */
 .timeline-wrapper::-webkit-scrollbar {
     display: none;
 }
 
 /* Centered Day Indicators */
 .timeline-day {
-    width: 350px; /* Fixed width */
-    height: 200px; /* Fixed height */
-    padding: 2rem; /* Remove padding */
+    width: 350px;
+    height: 200px;
+    padding: 2rem;
     background: linear-gradient(145deg, #472D5F, #583b70);
     color: #CDFFD8;
     font-weight: bold;
     border-radius: 15px;
     text-align: center;
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
 }
 
 .timeline-day h3 {
     font-size: 2rem;
-    margin: 0; /* Remove margin */
+    margin: 0;
     letter-spacing: 1px;
 }
 
 .timeline-day::before {
     content: '🗓️';
     font-size: 2.5rem;
-    margin-bottom: 0; /* Remove margin */
+    margin-bottom: 0;
 }
 
 /* Timeline Events */
 .timeline-event {
-    width: 350px; /* Fixed width */
-    height: 200px; /* Fixed height */
-    padding: 2rem 10rem; /* Adjust padding */
+    width: 350px;
+    height: 200px;
+    padding: 2rem 10rem;
     background: linear-gradient(145deg, #CEB6EA, #D8C6F0);
     border-radius: 15px;
     text-align: left;
@@ -199,27 +197,26 @@ footer h2, footer p {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    margin-top: 1.5rem; /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
 }
 
-/* Remove the purple line */
 .timeline-event::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 0; /* Set width to 0 to remove the line */
+    width: 0;
     height: 100%;
-    background: none; /* Remove background color */
+    background: none;
 }
 
 .timeline-event h4 {
     font-size: 1.3rem;
-    margin: 0; /* Remove margin */
+    margin: 0;
     color: #472D5F;
     display: flex;
     align-items: center;
@@ -235,7 +232,7 @@ footer h2, footer p {
     font-size: 1rem;
     color: #14051A;
     line-height: 1.6;
-    margin: 0; /* Remove margin */
+    margin: 0;
 }
 
 .timeline-event strong {
@@ -244,7 +241,7 @@ footer h2, footer p {
 }
 
 .timeline-event .details {
-    margin-top: 0; /* Remove margin */
+    margin-top: 0;
     padding-top: 12px;
     border-top: 1px dashed rgba(71, 45, 95, 0.2);
     font-size: 0.9rem;
@@ -255,8 +252,8 @@ footer h2, footer p {
 .scroll-indicator {
     position: relative;
     width: 100%;
-    height: 50px; /* Adjust height as needed */
-    margin-bottom: 20px; /* Space between indicators */
+    height: 50px;
+    margin-bottom: 20px;
 }
 
 .scroll-track {
@@ -265,13 +262,18 @@ footer h2, footer p {
 }
 
 .rocket-icon {
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top: 50%;
-    left: 10px; /* Initial position with padding */
-    transform: translateY(-50%);
-    width: 40px; /* Adjust size as needed */
-    height: auto;
+    top: 35%;
+    transform: translate(-50%, -50%) rotate(-90deg);
     cursor: grab;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    padding-left: 30px;
+    padding-right: 10px;
+    pointer-events: none;
+    animation: float 2s ease-in-out infinite;
 }
 
 /* SVG Path */
@@ -286,21 +288,6 @@ footer h2, footer p {
     stroke-linecap: round;
 }
 
-/* Rocket Scroll Indicator */
-.rocket-icon {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 35%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    cursor: grab;
-    z-index: 10;
-    transition: transform 0.3s ease;
-    padding-left: 30px;
-    padding-right: 10px;
-    pointer-events: none;
-}
-
 /* Floating Animation */
 @keyframes float {
     0%, 100% {
@@ -311,16 +298,12 @@ footer h2, footer p {
     }
 }
 
-.rocket-icon {
-    animation: float 2s ease-in-out infinite;
-}
-
 /* Timeline Containers */
 .timeline-day-container {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: #14051A; /* Match the background color to avoid overlap issues */
+    background: #14051A;
     align-content: center;
 }
 
@@ -329,7 +312,7 @@ footer h2, footer p {
     gap: 30px;
     padding: 30px 20px 50px 20px;
     overflow-x: auto;
-    scrollbar-width: none; /* Hide default scrollbar */
+    scrollbar-width: none;
     scroll-behavior: smooth;
     white-space: nowrap;
     align-content: center;
