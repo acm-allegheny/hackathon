@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const saturdayTimeline = document.querySelectorAll(".timeline-wrapper")[0];
-    const sundayTimeline = document.querySelectorAll(".timeline-wrapper")[1];
+    const saturdayTimeline = document.querySelectorAll(".timeline-events-container")[0];
+    const sundayTimeline = document.querySelectorAll(".timeline-events-container")[1];
     const saturdayRocket = document.querySelector("#rocket-scroll-saturday");
     const sundayRocket = document.querySelector("#rocket-scroll-sunday");
     const saturdayScrollTrack = document.querySelectorAll(".scroll-track")[0];
