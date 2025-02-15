@@ -1,5 +1,19 @@
 /* General style */
 
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'MoligaDEMO';
+    src: url('../font/MoligaDEMO.otf') format('opentype');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'NCLNeovibes';
+    src: url('../font/NCLNeovibes-Demo.otf') format('opentype');
+}
+
 /* Remove scroll bar but allow scrolling */
 ::-webkit-scrollbar {
     width: 0; /* Remove scrollbar space for WebKit-based browsers */
@@ -29,13 +43,26 @@ body {
     overflow: hidden;
 }
 
+.logo-text {
+    position: absolute;
+    width: 75%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'NCLNeovibes', sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: white;
+}
+
 .constellation-frame {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 50%;
+    top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.4);
+    transform: translate(-50%, -50%) scale(1.35);
 }
 
 .star {

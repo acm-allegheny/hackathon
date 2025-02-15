@@ -1,6 +1,6 @@
 export default function createStars() {
   const sky = document.getElementById('sky');
-  const numStars = 50;
+  const numStars = 75;
 
   for (let i = 0; i < numStars; i++) {
     const star = document.createElement('div');
