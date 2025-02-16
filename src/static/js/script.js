@@ -71,4 +71,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial position
     updateRocketPosition(saturdayTimeline, saturdayRocket, saturdayScrollTrack);
     updateRocketPosition(sundayTimeline, sundayRocket, sundayScrollTrack);
+    
+    // FAQ dropdown functionality
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqAnswer = button.nextElementSibling;
+
+            button.classList.toggle('active');
+
+            if (button.classList.contains('active')) {
+                faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+            } else {
+                faqAnswer.style.maxHeight = 0;
+            }
+        });
+    });
 });

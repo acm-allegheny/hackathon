@@ -1,12 +1,12 @@
-/* General Styles */
-body {
-    background: #000000;
+/* ======================== */
+/* Global Styles */
+/* ======================== */
+
+body, html {
+    background: #14051A;
     font-family: Monospace;
     margin: 0;
-    overflow-x: hidden;
-}
-
-html {
+    color: #CDFFD8;
     scrollbar-width: none;
 }
 
@@ -15,9 +15,12 @@ html {
     background: transparent;
 }
 
-/* Navbar Styles */
+/* ======================== */
+/* Navbar */
+/* ======================== */
+
 .navbar {
-    background: #000000;
+    background: #14051A;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -32,16 +35,20 @@ html {
 }
 
 .navbar .links a {
-    color: #ffffff;
+    color: #CDFFD8;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
 .navbar .links a:hover {
-    color: #FEDA48;
+    color: #CEB6EA;
 }
 
-/* Logo Styles */
+
+/* ======================== */
+/* Logo */
+/* ======================== */
+
 .logo-container {
     position: absolute;
     top: 20px;
@@ -53,12 +60,15 @@ html {
     display: block;
 }
 
-.logo-container a img {
+.logo-container img {
     max-height: 80px;
     width: auto;
 }
 
+/* ======================== */
 /* Hero Section */
+/* ======================== */
+
 #hero {
     height: 100vh;
 }
@@ -69,24 +79,16 @@ html {
     object-fit: cover;
 }
 
-/* Grid Layout for Sections */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-}
+/* ======================== */
+/* Section Layout */
+/* ======================== */
 
-/* Section Styles */
 .section {
     font-size: 1rem;
     padding: 60px 20px;
-    background: #ffffff;
-    color: #000000;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-    text-align: center;
+    background: #14051A;
+    color: #CDFFD8;
+    text-align: left;
 }
 
 .section:last-of-type {
@@ -95,30 +97,149 @@ html {
 
 .section h2 {
     margin-bottom: 20px;
+    color: #CEB6EA;
+    text-align: center;
 }
 
-.section p {
+.section p, .section ul {
     max-width: 800px;
     margin: 0 auto;
-    color: #000000;
+    color: #CDFFD8;
+    text-align: left;
 }
 
-/* Footer Styles */
+.section ul {
+    padding-left: 20px;
+}
+
+/* ======================== */
+/* Events and Rules */
+/* ======================== */
+
+/* Rules Section Styling */
+#rules {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Title Styling */
+#rules h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #CEB6EA; /* Light Purple */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+/* Body Text */
+#rules .section-content,h3 {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #CDFFD8; /* Soft Green */
+}
+
+/* Highlights for key points */
+#rules .section-content strong {
+    color: #94B9FF; /* Light Blue */
+    font-weight: bold;
+}
+
+/* List Styling */
+#rules .section-content ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+#rules .section-content li {
+    margin-bottom: 10px;
+}
+
+/* Emphasizing final sentence */
+#rules .section-content p:last-of-type {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #CDFFD8;
+    margin-top: 20px;
+}
+
+/* About Section Styling */
+
+#about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #CEB6EA; /* Light Purple */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+#about .section-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #CDFFD8; /* Soft Green */
+}
+
+#about .section-content p {
+    margin-bottom: 20px;
+}
+
+#about .section-content h3 {
+    font-size: 1.8rem;
+    color: #CEB6EA; /* Light Purple */
+    margin-bottom: 15px;
+}
+
+#about .section-content ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+#about .section-content li {
+    margin-bottom: 15px;
+    color: #94B9FF; /* Light Blue */
+}
+
+#about .section-content strong {
+    color: #94B9FF; /* Light Blue */
+    font-weight: bold;
+}
+
+/* ======================== */
+/* Footer */
+/* ======================== */
+
 footer {
-    color: #FFFFFF;
+    background: #000000;
+    color: #CDFFD8;
     padding: 20px 0;
     text-align: center;
 }
 
 footer h2, footer p {
-    color: #ffffff;
+    color: #CDFFD8;
     text-decoration: none;
 }
+
+/* ======================== */
+/* Timeline Styles */
+/* ======================== */
 
 /* General Schedule Styling */
 .timeline-container {
     background: #14051A;
-    color: #fff;
+    color: #CDFFD8;
     padding: 40px 20px;
     text-align: center;
     overflow-x: hidden;
@@ -131,14 +252,14 @@ footer h2, footer p {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #CDFFD8;
+    color: #CEB6EA;
 }
 
 /* Title */
 .timeline-container p {
     font-size: 0.75rem;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #CDFFD8;
 }
 
 /* Scrollable Timeline */
@@ -243,7 +364,6 @@ footer h2, footer p {
 .timeline-event .details {
     margin-top: 0;
     padding-top: 12px;
-    border-top: 1px dashed rgba(71, 45, 95, 0.2);
     font-size: 0.9rem;
     color: #666;
 }
@@ -317,4 +437,150 @@ footer h2, footer p {
     white-space: nowrap;
     align-content: center;
     margin-left: 20px;
+}
+
+/* ======================== */
+/* FAQ Styles */
+/* ======================== */
+
+.faq-item {
+    margin-bottom: 1em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: #CEB6EA;
+    border: none;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #472D5F;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #CDFFD8;
+    color: #14051A;
+}
+
+.faq-question .chevron {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 4px solid #472D5F;
+    border-bottom: 4px solid #472D5F;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .chevron {
+    transform: rotate(225deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #CEB6EA;
+    padding: 0 1em;
+}
+
+.faq-answer p {
+    margin: 1em 0;
+    color: #472D5F;
+}
+
+/* ======================== */
+/* Judges, Sponsors, Prizes */
+/* ======================== */
+
+.judges-grid, .sponsors-grid, .prizes-grid {
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 4 Per Row */
+.judges-grid, .sponsors-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* 3 Per Row */
+.prizes-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.judge-item, .sponsor-item, .prize-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Circular Images for Judges */
+.judge-item img, .sponsor-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: white;
+}
+
+.sponsor-item img {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: scale-down;
+}
+
+.prize-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    background: white;
+}
+
+/* Text Styling */
+.judge-name, .sponsor-name, .prize-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #CDFFD8;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+/* Hover Effect */
+.prize-item img:hover {
+    transform: scale(1.05);
+}
+
+/* ======================== */
+/* Responsive Design */
+/* ======================== */
+
+@media (max-width: 1024px) {
+    .judges-grid, .sponsors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .prizes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .judges-grid, .sponsors-grid, .prizes-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
