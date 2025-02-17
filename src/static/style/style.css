@@ -2,12 +2,34 @@
 /* Global Styles */
 /* ======================== */
 
+<<<<<<< HEAD
+
+=======
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'MoligaDEMO';
+    src: url('../font/MoligaDEMO.otf') format('opentype');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'NCLNeovibes';
+    src: url('../font/NCLNeovibes-Demo.otf') format('opentype');
+}
+
+/* Remove scroll bar but allow scrolling */
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space for WebKit-based browsers */
+    background: transparent; /* Transparent background for scrollbar */
+}
+
 body, html {
     background: #14051A;
     font-family: inter;
-    margin: 0;
-    color: #CDFFD8;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -68,14 +90,95 @@ body, html {
 /* Hero Section */
 /* ======================== */
 
-#hero {
+#sky {
+    width: 100%;
     height: 100vh;
+    background: linear-gradient(to bottom, #14015A, #472D5F);
+    position: relative;
+    overflow: hidden;
 }
 
-#hero img {
+.logo-text {
+    position: absolute;
+    width: 75%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'NCLNeovibes', sans-serif;
+    font-size: 3vw;
+    letter-spacing: -0.025em;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: appear 0.5s ease-in forwards;
+    animation-delay: 5s;
+}
+
+.constellation-frame {
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.35);
+}
+
+.countdown-grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 32.5%;
+    height: 7.5%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'NCLNeovibes', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: appear 0.5s ease-in forwards;
+    animation-delay: 5s;
+}
+
+.registration-button {
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    top: 87.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'NCLNeovibes', sans-serif;
+    font-size: 1.2vw;
+    border-radius: 15px;
+    text-decoration: none;
+    background: #CEB6EA;
+    text-align: center;
+    align-content: center;
+    opacity: 0;
+    animation: appear 0.5s ease-in forwards;
+    animation-delay: 5s;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation-name: twinkle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* ======================== */
