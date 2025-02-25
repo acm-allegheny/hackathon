@@ -5,17 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "build": "npm install",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d src"
+    "start": "node src/index.js"
   },
   "author": "Allegheny College Chapter of the Association for Computing Machinery",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
