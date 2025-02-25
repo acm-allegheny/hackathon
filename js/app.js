@@ -1,4 +1,48 @@
-export default function script() {
+function createStars() {
+  const sky = document.getElementById('sky');
+  const numStars = 40;
+
+  for (let i = 0; i < numStars; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+
+    // Random size between 2-4px
+    const size = Math.random() * 2 + 2;
+    star.style.width = size + 'px';
+    star.style.height = size + 'px';
+
+    // Random position
+    star.style.left = Math.random() * 100 + '%';
+    star.style.top = Math.random() * 100 + '%';
+
+    // Random animation delay
+    star.style.animationDelay = '-' + Math.random() * 2 + 's';
+
+    sky.appendChild(star);
+  }
+}
+
+function countdown() {
+  var countDownDate = new Date("Apr 12, 2025 00:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("day-num").innerHTML = days
+    document.getElementById("hour-num").innerHTML = hours
+    document.getElementById("minute-num").innerHTML = minutes
+    document.getElementById("second-num").innerHTML = seconds
+  }, 1000);
+}
+
+function script() {
     const saturdayTimeline = document.querySelectorAll(".timeline-events-container")[0];
     const sundayTimeline = document.querySelectorAll(".timeline-events-container")[1];
     const saturdayRocket = document.querySelector("#rocket-scroll-saturday");
@@ -87,3 +131,7 @@ export default function script() {
         });
     });
 }
+
+createStars();
+countdown();
+script();
