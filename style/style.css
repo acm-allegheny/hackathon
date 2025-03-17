@@ -5,15 +5,29 @@
 @font-face {
     font-weight: normal;
     font-style: normal;
-    font-family: 'MoligaDEMO';
-    src: url('../font/MoligaDEMO.otf') format('opentype');
+    font-family: 'Aquire';
+    src: url('../fonts/Aquire-Bold.otf') format('opentype');
 }
 
 @font-face {
     font-weight: normal;
     font-style: normal;
-    font-family: 'NCLNeovibes';
-    src: url('../font/NCLNeovibes-Demo.otf') format('opentype');
+    font-family: 'Azonix';
+    src: url('../fonts/Azonix.otf') format('opentype');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'UTM-Avo';
+    src: url('../fonts/UTM-Avo.ttf') format('truetype');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Data70';
+    src: url('../fonts/Data70.ttf') format('truetype');
 }
 
 /* Remove scroll bar but allow scrolling */
@@ -24,7 +38,7 @@
 
 body, html {
     background: #14051A;
-    font-family: inter;
+    font-family: 'UTM-Avo', sans-serif;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
@@ -57,6 +71,7 @@ body, html {
     color: #CDFFD8;
     text-decoration: none;
     font-size: 1.5rem;
+    font-family: 'Azonix', sans-serif;
 }
 
 .navbar .links a:hover {
@@ -101,7 +116,7 @@ body, html {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'NCLNeovibes', sans-serif;
+    font-family: 'Aquire', sans-serif;
     font-size: 3vw;
     letter-spacing: -0.025em;
     text-align: center;
@@ -129,7 +144,7 @@ body, html {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'NCLNeovibes', sans-serif;
+    font-family: 'Data70', sans-serif;
     font-size: 1.4vw;
     text-align: center;
     color: white;
@@ -146,7 +161,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'NCLNeovibes', sans-serif;
+    font-family: 'UTM-Avo', sans-serif;
     font-size: 1.2vw;
     border-radius: 15px;
     text-decoration: none;
@@ -198,10 +213,12 @@ body, html {
     margin-bottom: 1.25rem;
     color: #CEB6EA;
     text-align: center;
+    font-family: 'Aquire', sans-serif;
 }
 
 .section h3 {
     text-align: center;
+    font-family: 'Azonix', sans-serif;
 }
 
 .section p, .section ul {
@@ -209,6 +226,7 @@ body, html {
     margin: 0 auto;
     color: #CDFFD8;
     text-align: left;
+    font-family: 'UTM-Avo', sans-serif;
 }
 
 .section ul {
@@ -231,6 +249,7 @@ body, html {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 1.25rem;
+    font-family: 'Aquire', sans-serif;
 }
 
 #rules .section-content h3 {
@@ -240,6 +259,7 @@ body, html {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #CDFFD8;
+    font-family: 'Azonix', sans-serif;
 }
 
 #rules .section-content strong {
@@ -277,6 +297,7 @@ body, html {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 1.875rem;
+    font-family: 'Aquire', sans-serif;
 }
 
 #about .section-content {
@@ -286,6 +307,7 @@ body, html {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #CDFFD8;
+    font-family: 'UTM-Avo', sans-serif;
 }
 
 #about .section-content p {
@@ -296,6 +318,7 @@ body, html {
     font-size: 1.8rem;
     color: #CEB6EA;
     margin-bottom: 0.9375rem;
+    font-family: 'Azonix', sans-serif;
 }
 
 #about .section-content ul {
@@ -327,6 +350,7 @@ footer {
 footer h2, footer p {
     color: #CDFFD8;
     text-decoration: none;
+    font-family: 'UTM-Avo', sans-serif;
 }
 
 /* ======================== */
@@ -348,12 +372,14 @@ footer h2, footer p {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #CEB6EA;
+    font-family: 'Aquire', sans-serif;
 }
 
 .timeline-container p {
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #CDFFD8;
+    font-family: 'UTM-Avo', sans-serif;
 }
 
 .timeline-wrapper {
@@ -400,6 +426,7 @@ footer h2, footer p {
     font-size: 1.5rem;
     margin: 0;
     letter-spacing: 1px;
+    font-family: 'Azonix', sans-serif;
 }
 
 .timeline-day::before {
@@ -443,6 +470,7 @@ footer h2, footer p {
     color: #472D5F;
     display: flex;
     align-items: center;
+    font-family: 'Azonix', sans-serif;
 }
 
 .timeline-event h4::before {
@@ -461,6 +489,7 @@ footer h2, footer p {
     padding-top: 0.75rem;
     font-size: 0.9rem;
     color: #666;
+    font-family: 'UTM-Avo', sans-serif;
 }
 
 .scroll-indicator {
@@ -562,6 +591,7 @@ footer h2, footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Azonix', sans-serif;
 }
 
 .faq-question:hover {
