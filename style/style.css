@@ -37,7 +37,7 @@
 }
 
 body, html {
-    background: #14051A;
+    background: #14041A;
     font-family: 'UTM-Avo', sans-serif;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -53,7 +53,7 @@ body, html {
 /* ======================== */
 
 .navbar {
-    background: #14051A;
+    background: #14041A;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -68,14 +68,14 @@ body, html {
 }
 
 .navbar .links a {
-    color: #CDFFD8;
+    color: #90F2F3;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Azonix', sans-serif;
 }
 
 .navbar .links a:hover {
-    color: #CEB6EA;
+    color: #CDB0FF;
 }
 
 /* ======================== */
@@ -165,7 +165,7 @@ body, html {
     font-size: 1.2vw;
     border-radius: 15px;
     text-decoration: none;
-    background: #CEB6EA;
+    background: #CDB0FF;
     text-align: center;
     align-content: center;
     opacity: 0;
@@ -200,8 +200,8 @@ body, html {
 .section {
     font-size: 1rem;
     padding: 3.75rem 1.25rem;
-    background: #14051A;
-    color: #CDFFD8;
+    background: #14041A;
+    color: #90F2F3;
     text-align: left;
 }
 
@@ -211,7 +211,7 @@ body, html {
 
 .section h2 {
     margin-bottom: 1.25rem;
-    color: #CEB6EA;
+    color: #CDB0FF;
     text-align: center;
     font-family: 'Aquire', sans-serif;
 }
@@ -224,7 +224,7 @@ body, html {
 .section p, .section ul {
     max-width: 50rem;
     margin: 0 auto;
-    color: #CDFFD8;
+    color: #90F2F3;
     text-align: left;
     font-family: 'UTM-Avo', sans-serif;
 }
@@ -245,7 +245,7 @@ body, html {
 #rules h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #CEB6EA;
+    color: #CDB0FF;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 1.25rem;
@@ -258,7 +258,7 @@ body, html {
     text-align: left;
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #CDFFD8;
+    color: #90F2F3;
     font-family: 'Azonix', sans-serif;
 }
 
@@ -279,7 +279,7 @@ body, html {
 #rules .section-content p:last-of-type {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #CDFFD8;
+    color: #90F2F3;
     margin-top: 1.25rem;
 }
 
@@ -293,7 +293,7 @@ body, html {
 #about h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #CEB6EA;
+    color: #CDB0FF;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 1.875rem;
@@ -306,7 +306,7 @@ body, html {
     text-align: left;
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #CDFFD8;
+    color: #90F2F3;
     font-family: 'UTM-Avo', sans-serif;
 }
 
@@ -316,7 +316,7 @@ body, html {
 
 #about .section-content h3 {
     font-size: 1.8rem;
-    color: #CEB6EA;
+    color: #CDB0FF;
     margin-bottom: 0.9375rem;
     font-family: 'Azonix', sans-serif;
 }
@@ -341,14 +341,14 @@ body, html {
 /* ======================== */
 
 footer {
-    background: #000000;
-    color: #CDFFD8;
+    background: #14041A;
+    color: #90F2F3;
     padding: 1.25rem 0;
     text-align: center;
 }
 
 footer h2, footer p {
-    color: #CDFFD8;
+    color: #90F2F3;
     text-decoration: none;
     font-family: 'UTM-Avo', sans-serif;
 }
@@ -358,8 +358,8 @@ footer h2, footer p {
 /* ======================== */
 
 .timeline-container {
-    background: #14051A;
-    color: #CDFFD8;
+    background: #14041A;
+    color: #90F2F3;
     padding: 2.5rem 1.25rem;
     text-align: center;
     overflow-x: hidden;
@@ -371,14 +371,14 @@ footer h2, footer p {
     margin-bottom: 1.25rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #CEB6EA;
+    color: #CDB0FF;
     font-family: 'Aquire', sans-serif;
 }
 
 .timeline-container p {
     font-size: 0.75rem;
     text-transform: uppercase;
-    color: #CDFFD8;
+    color: #90F2F3;
     font-family: 'UTM-Avo', sans-serif;
 }
 
@@ -397,12 +397,12 @@ footer h2, footer p {
 }
 
 .timeline-wrapper::-webkit-scrollbar-thumb {
-    background: #CEB6EA;
+    background: #CDB0FF;
     border-radius: 0.125rem;
 }
 
 .timeline-wrapper::-webkit-scrollbar-track {
-    background: #14051A;
+    background: #14041A;
 }
 
 .timeline-day {
@@ -410,7 +410,7 @@ footer h2, footer p {
     height: 9.375rem;
     padding: 1.5rem;
     background: linear-gradient(145deg, #472D5F, #583b70);
-    color: #CDFFD8;
+    color: #90F2F3;
     font-weight: bold;
     border-radius: 0.9375rem;
     text-align: center;
@@ -439,7 +439,7 @@ footer h2, footer p {
     width: 21.875rem;
     height: 9.375rem;
     padding: 1.5rem 7.5rem;
-    background: linear-gradient(145deg, #CEB6EA, #D8C6F0);
+    background: linear-gradient(145deg, #CDB0FF, #D8C6F0);
     border-radius: 0.9375rem;
     text-align: left;
     transition: all 0.3s ease-in-out;
@@ -544,7 +544,7 @@ footer h2, footer p {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: #14051A;
+    background: #14041A;
     align-content: center;
 }
 
@@ -564,7 +564,7 @@ footer h2, footer p {
 }
 
 .timeline-events-container::-webkit-scrollbar-thumb {
-    background: #CEB6EA;
+    background: #CDB0FF;
     border-radius: 0.3125rem;
 }
 
@@ -579,7 +579,7 @@ footer h2, footer p {
 }
 
 .faq-question {
-    background-color: #CEB6EA;
+    background-color: #CDB0FF;
     border: none;
     padding: 1em;
     width: 100%;
@@ -595,8 +595,8 @@ footer h2, footer p {
 }
 
 .faq-question:hover {
-    background-color: #CDFFD8;
-    color: #14051A;
+    background-color: #90F2F3;
+    color: #14041A;
 }
 
 .faq-question .chevron {
@@ -617,7 +617,7 @@ footer h2, footer p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    background-color: #CEB6EA;
+    background-color: #CDB0FF;
     padding: 0 1em;
 }
 
@@ -682,7 +682,7 @@ footer h2, footer p {
 .judge-name, .sponsor-name, .prize-name {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #CDFFD8;
+    color: #90F2F3;
     padding-top: 1.25rem;
     padding-bottom: 0.3125rem;
 }
