@@ -630,7 +630,7 @@ footer h2, footer p {
 /* Judges, Sponsors, Prizes */
 /* ======================== */
 
-.judges-grid, .sponsors-grid, .prizes-grid {
+.judges-grid, .sponsors-grid{ /* .prizes-grid */
     display: grid;
     gap: 2.5rem;
     justify-content: center;
@@ -643,11 +643,11 @@ footer h2, footer p {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
-.prizes-grid {
+/* .prizes-grid {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
+} */
 
-.judge-item, .sponsor-item, .prize-item {
+.judge-item, .sponsor-item { /* .prize-item */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -672,14 +672,14 @@ footer h2, footer p {
     object-fit: scale-down;
 }
 
-.prize-item img {
+/* .prize-item img {
     width: 9.375rem;
     height: auto;
     border-radius: 0.625rem;
     background: white;
-}
+} */
 
-.judge-name, .sponsor-name, .prize-name {
+.judge-name, .sponsor-name{ /* .prize-name */
     font-size: 1.1rem;
     font-weight: bold;
     color: #90F2F3;
@@ -687,8 +687,96 @@ footer h2, footer p {
     padding-bottom: 0.3125rem;
 }
 
-.prize-item img:hover {
+/* .prize-item img:hover {
     transform: scale(1.05);
+} */
+
+/* Prize Section Styles */
+.prize-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(145deg, #472D5F, #583b70);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.prize-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prize-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.prize-description {
+    flex: 1;
+    padding: 1rem;
+    color: #90F2F3;
+}
+
+.prize-description h3 {
+    color: #CDB0FF;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.prize-description h4 {
+    color: #90F2F3;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1rem;
+    font-family: 'Azonix', sans-serif;
+}
+
+.prize-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.prize-description ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.prize-description li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.prize-note {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #CDB0FF;
+}
+
+/* Responsive Design for Prize Section */
+@media (max-width: 768px) {
+    .prize-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .prize-image {
+        order: 2;
+    }
+
+    .prize-description {
+        order: 1;
+    }
 }
 
 /* ======================== */
