@@ -639,8 +639,12 @@ footer h2, footer p {
     margin-top: 1.25rem;
 }
 
-.judges-grid, .sponsors-grid {
+.sponsors-grid {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.judges-grid {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 /* .prizes-grid {
