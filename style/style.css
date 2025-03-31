@@ -644,7 +644,7 @@ footer h2, footer p {
 }
 
 .judges-grid {
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 /* .prizes-grid {
@@ -662,8 +662,8 @@ footer h2, footer p {
 }
 
 .judge-item img, .sponsor-item img {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     object-fit: cover;
     background: white;
